@@ -1,2 +1,1 @@
-https://ethanbanag.github.io/Lab2_Starter/
-lab 3 test push
+https://ethanbanag.github.io/sp26-cse110-lab3/
