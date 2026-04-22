@@ -1,0 +1,140 @@
+:root {
+    --highlight-color: orange; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333333; 
+}
+
+#meeting-time {
+    text-align: center;
+    color: hsl(210, 50%, 40%); 
+    text-decoration: underline;
+}
+
+.business-items {
+    width: 80vw;
+    max-width: 1000px;
+    min-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    background-color: color-mix(in srgb, lightblue 30%, white);
+    position: relative; 
+}
+
+h1, h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+header {
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+img, video {
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.5); 
+    border-width: 0.2cm; 
+    border-radius: 10px;
+}
+
+ul.attendance-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    flex-wrap: wrap; 
+    gap: 1em; 
+    padding: 0;
+}
+
+ul.attendance-flex li {
+    display: inline-block; 
+    background-color: hsla(120, 40%, 80%, 0.5); 
+    padding: 10px 15px 10px 15px;
+    margin: 5px 5px 5px 5px;
+}
+
+/* Grid Layout */
+fieldset.form-grid {
+    display: grid; 
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    align-items: start; 
+}
+
+nav > a {
+    display: inline; 
+    color: rgb(0, 100, 200); 
+}
+
+h2 ~ p {
+    font-size: 1.1rem;
+}
+
+h2 + ol {
+    background-color: #eef;
+}
+
+input[type="search"] {
+    width: 100%;
+}
+
+ul.attendance-flex li:hover {
+    background-color: var(--highlight-color);
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+section:has(video) {
+    border: 2px dashed rgb(150, 150, 150);
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1in;
+
+    & button {
+        background-color: var(--highlight-color);
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+    }
+}
+
+.hidden {
+    display: none; 
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .business-items {
+        width: 95vw;
+    }
+    
+    fieldset.form-grid {
+        grid-template-columns: 1fr;
+    }
+}
