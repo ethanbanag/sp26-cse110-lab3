@@ -1,3 +1,4 @@
+/* --- Global Styles & Variables --- */
 :root {
     --highlight-color: orange; 
 }
@@ -17,6 +18,7 @@ body {
     text-decoration: underline;
 }
 
+/* --- Box Model & Component Sizing --- */
 .business-items {
     width: 80vw;
     max-width: 1000px;
@@ -49,6 +51,7 @@ img, video {
     border-radius: 10px;
 }
 
+/* --- Flexbox & Grid Layouts --- */
 ul.attendance-flex {
     display: flex;
     flex-direction: row;
@@ -73,6 +76,7 @@ fieldset.form-grid {
     align-items: start; 
 }
 
+/* --- Advanced Selectors, Interactive States & Positioning --- */
 nav > a {
     display: inline; 
     color: rgb(0, 100, 200); 
@@ -129,6 +133,7 @@ nav {
     padding: 10px;
 }
 
+/* --- Responsiveness --- */
 @media (max-width: 768px) {
     .business-items {
         width: 95vw;
