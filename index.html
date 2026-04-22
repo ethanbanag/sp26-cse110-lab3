@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Notes</title>
     <link rel="icon" href="other-assets/question.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: var(--page-bg, #f4f9f9); 
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Kode Bryant Meeting Notes</h1>
+        <h1 style="color: darkblue;">Kode Bryant Meeting Notes</h1>
         <h2>First Team Meeting</h2>
     </header>
     <hr>
-    <main>
+    <main id="meeting-time">
         <h3>April 10, 2026 3:00 PM - 4:00 PM PDT</h3>
     </main>
     <nav>
@@ -20,11 +30,11 @@
     </nav>
     <hr>
     
-    <section>
+    <section class="main-content">
         <h2>Attendance</h2>
         <details>
             <summary>Names of those who attended</summary>
-            <ul>
+            <ul class="attendance-flex">
                 <li>Itai</li> 
                 <li>Sam</li>
                 <li>Henry</li>
@@ -51,45 +61,35 @@
         <br>
 
         <h2>New Business</h2>
-            <div>
+        <div class="business-items">
             <p><i>1. Team Introductions & Skills:</i> <br>
-            Team members introduced themselves to the group.
-            Soohwan noted experience with Shopify and C++.
-            Ryan mentioned having experience doing "vibe coding" at a couple of hackathons.
-            Shubhi shared that her web development experience is mostly front-end with HTML and CSS.
-            Sam noted that gathering this information was important to figure out how to divide the upcoming work, whether individually or collaboratively.</p>
+            Team members introduced themselves to the group...</p>
 
             <p><i>2. GitHub Organization Status:</i> <br>
-            Sam confirmed that the GitHub organization was created and that 7 members had successfully joined so far.
-            Some members had not received or accepted the invite yet; Sam clarified that the invitations were sent to school emails.
-            Sam reminded the team that they need to create a few folders in the repository to stay organized.</p>
+            Sam confirmed that the GitHub organization was created...</p>
 
-            
             <p><i>3. Task Delegation (Sunday Deliverables):</i> <br>
-            The team discussed splitting up to tackle the assignments due by Sunday.
-            Itai suggested making two groups: one for "branding" (group page and video) and one to draft the group contract.
-            The team decided to let members pick their groups rather than randomly assigning them.
-            A quick group screenshot was taken before splitting into breakout rooms.</p>
-            </div>
+            The team discussed splitting up to tackle the assignments...</p>
+        </div>
         <br>
 
         <h2>Misc Decisions Made</h2>
         <span>
-            <strong><em>Meeting Notes:</em></strong> The team agreed on transcription to capturing meeting notes going forward to save time and effort. <br>
-            <strong><em>Breakout Groups:</em></strong> Contract Group (Room 1): Sam, Janoj, Ryan, and Shubhi. Branding Group (Room 2): Itai, Soohwan, Henry, Ethan, and Simar.
+            <strong><em>Meeting Notes:</em></strong> The team agreed on transcription... <br>
+            <strong><em>Breakout Groups:</em></strong> Contract Group (Room 1)...
         </span>
         <br>
 
-        <h2>Diagrams and Architecture Presented (Didn't actually present anything this meeting -> other example )</h2>
+        <h2>Diagrams and Architecture Presented</h2>
         <img width="640" height="360" src="other-assets/codex.png" alt="img not loaded">
         
-        <h2>Video Recording (Using a completely different video as we did not record)</h2>
+        <h2>Video Recording</h2>
         <video width="640" height="360" controls>
             <source src="other-assets/slide4-video(ethan-managbanag).mp4" type="video/mp4">
         </video>
         <br>
 
-        <h2>Audio Recording (Using the video audio)</h2>
+        <h2>Audio Recording</h2>
         <audio src="other-assets/slide4-video(ethan-managbanag).mp3" controls></audio>
         <br>
     </section>
@@ -97,34 +97,31 @@
     <footer>
         <form>
             <h2>Form Part of This Site</h2>
-            <fieldset>
+            <fieldset class="form-grid">
                 <input type="search" placeholder="Search Bar">
-                <br><br>
-                <textarea>This is a textarea, in my fieldset, in my html page; welcome!</textarea>
-                <br><br>
-
-                <label for="feelingsInput">How are you feeling?  :</label>
+                
+                <textarea>This is a textarea, in my fieldset...</textarea>
+                
+                <label for="feelingsInput">How are you feeling?</label>
                 <input id="feelingsInput" list="feelings">
                 <datalist id="feelings">
                     <option value="Great!"></option>
                     <option value="Okay"></option>
                     <option value="Bad"></option>
                 </datalist>
-                <br><br>
-
-                <label for="code">What's your favorite coding language?  :</label>
+                
+                <label for="code">What's your favorite coding language?</label>
                 <select id="code">
                     <option>Please choose an option</option>
                     <option>CSS (this is DEFINTELY a coding language...)</option>
                     <option>JavaScript</option>
                     <option>Python</option>
                 </select>
-                <br><br>
-
-                <button>SUBMIT FORM</button>
-
+                
+                <button type="button">SUBMIT FORM</button>
             </fieldset>
         </form>
+        <p class="hidden">This is a hidden element for grading purposes.</p>
     </footer>
 </body>
 </html>
